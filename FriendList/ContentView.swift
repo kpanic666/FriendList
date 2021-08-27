@@ -8,9 +8,32 @@
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject var userContainer = UserContainer()
+    
+    @State private var loadURL = "https://www.hackingwithswift.com/samples/friendface.json"
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView {
+            VStack {
+                List {
+                    ForEach(userContainer.users) {
+                        Text($0.name)
+                    }
+                }
+                
+                TextField("URL for friend list loading", text: $loadURL)
+                
+                HStack {
+                    Button("Reload from Internet") {
+                        do { try userContainer.loadDataFromURL(string: loadURL)
+                        } catch {
+                            print("Can't load user data from provided URL.")
+                        }
+                    }
+                }
+            }
+            .navigationBarTitle("My Friends")
+        }
     }
 }
 
