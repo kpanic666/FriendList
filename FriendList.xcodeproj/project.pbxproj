@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E907CB1C26DD017B008236C0 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E907CB1B26DD017B008236C0 /* DetailView.swift */; };
 		E995408126D8DDBF00C578AE /* FriendListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E995408026D8DDBF00C578AE /* FriendListApp.swift */; };
 		E995408326D8DDBF00C578AE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E995408226D8DDBF00C578AE /* ContentView.swift */; };
 		E995408526D8DDC000C578AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E995408426D8DDC000C578AE /* Assets.xcassets */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E907CB1B26DD017B008236C0 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		E995407D26D8DDBF00C578AE /* FriendList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FriendList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E995408026D8DDBF00C578AE /* FriendListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendListApp.swift; sourceTree = "<group>"; };
 		E995408226D8DDBF00C578AE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 			children = (
 				E995408026D8DDBF00C578AE /* FriendListApp.swift */,
 				E995408226D8DDBF00C578AE /* ContentView.swift */,
+				E907CB1B26DD017B008236C0 /* DetailView.swift */,
 				E995408F26D8DDFE00C578AE /* User.swift */,
 				E995408426D8DDC000C578AE /* Assets.xcassets */,
 				E995408926D8DDC000C578AE /* Info.plist */,
@@ -142,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E995408326D8DDBF00C578AE /* ContentView.swift in Sources */,
+				E907CB1C26DD017B008236C0 /* DetailView.swift in Sources */,
 				E995408126D8DDBF00C578AE /* FriendListApp.swift in Sources */,
 				E995409026D8DDFE00C578AE /* User.swift in Sources */,
 			);
